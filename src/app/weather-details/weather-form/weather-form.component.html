@@ -1,0 +1,30 @@
+<div class="">
+    <form class="forms" [formGroup]="formGroup" (ngSubmit)="getWeatherUpdate()">
+      <div></div>
+      <div class="">
+        <div class="">
+          <input
+            type="text"
+            class="f-control"
+            placeholder="City"
+            name="city"
+            autoComplete="off"
+            formControlName="cityName"
+          />
+        </div>
+        <div class="">
+          <input
+            type="text"
+            class="f-control"
+            placeholder="Country"
+            name="country"
+            autoComplete="off"
+            formControlName="countryName"
+          />
+        </div>
+        <div class="button">
+          <button class="btn btn-warning">Get Weather Update</button>
+        </div>
+      </div>
+    </form>
+  </div>

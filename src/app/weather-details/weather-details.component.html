@@ -1,0 +1,10 @@
+<div class="weather-details">
+    <img class="logo" src="../../assets/logo.png" alt="logo" />
+    <video class="video" autoplay muted loop>
+        <source src="../../assets/default.mp4" type="video/mp4">
+    </video>
+    <app-weather-form></app-weather-form>
+    <div *ngIf="showDetails()">
+        <app-weather-update></app-weather-update>
+    </div>
+</div>
